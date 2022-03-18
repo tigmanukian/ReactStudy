@@ -1,0 +1,14 @@
+.records{
+    border: 2px solid red;
+}
+.imageContainer{
+    display: flex;
+}
+
+.imgdiv{
+    width: 100px;
+    height: 200px;
+}
+.activePage{
+    background: green;
+}
