@@ -10,5 +10,9 @@
     height: 200px;
 }
 .activePage{
-    background: green;
+    background-color: rgb(28, 169, 28);
+}
+
+.next{
+    background-color: brown;
 }
