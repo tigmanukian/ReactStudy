@@ -1,8 +1,9 @@
 import HomePage from "./pages/homePage/HomePage";
-import Countres from "./pages/game/Countres";
-import { Route, Routes, Link, Outlet } from "react-router-dom";
-import Layout from './Layout/Layout';
+import Countries from "./pages/game/Countries";
+import { Route, Routes} from "react-router-dom";
+import {MainLayout} from './components';
 import Country from './pages/Country';
+
 
 function App() {
 
@@ -12,14 +13,14 @@ function App() {
     <div className="App">
 
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="Countres/" element={<Countres />} />
-          <Route path="Countres:id/" element={<Country />} />
+          <Route path="countries" element={<Countries />} />
+          <Route path="countries/:code" element={<Country />} />
         </Route>
       </Routes>
     </div>
-  )
+  )  
 }
 
 export default App
