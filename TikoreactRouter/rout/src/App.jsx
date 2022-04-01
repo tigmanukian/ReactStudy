@@ -1,36 +1,22 @@
-// import HomePage from "./components/homePage/HomePage";
-// import Game from "./components/game/Game";
-import { Route, Routes, Link } from "react-router-dom";
+import HomePage from "./pages/homePage/HomePage";
+import Countres from "./pages/game/Countres";
+import { Route, Routes, Link, Outlet } from "react-router-dom";
+import Layout from './Layout/Layout';
+import Country from './pages/Country';
 
 function App() {
 
-  function HomePage() {
-    return (
-      <div>
 
-        <h1>I am Home Page</h1>
-      </div>
-    );
-  }
 
-  function Game() {
-    return (
-      <div>
-       <h1> barev</h1>
-      </div>
-    );
-  }
   return (
     <div className="App">
-      <nav>
-        <Link to="/">homePage</Link>  
-        <br />
-        <br />
-        <Link to="Game">Game</Link>
-      </nav>
+
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="Game" element={<Game />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="Countres/" element={<Countres />} />
+          <Route path="Countres:id/" element={<Country />} />
+        </Route>
       </Routes>
     </div>
   )
