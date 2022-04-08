@@ -1,0 +1,46 @@
+:root {
+  --width: 200px;
+  --radius: 8px;
+  --font-size: 2em;
+}
+
+.app {
+  margin: 1em;
+}
+
+.screen {
+  border: 1px solid black;
+  width: var(--width);
+  aspect-ratio: 1/1;
+  margin-bottom: 1em;
+  border-radius: var(--radius);
+  padding: 0.5em;
+  font-size: var(--font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 0.5em;
+  font-size: var(--font-size);
+  border-radius: var(--radius);
+  transition: background-color 100ms linear;
+}
+
+.button:active {
+  background-color: rgb(228, 228, 228);
+}
+
+.buttonWrapper {
+  width: var(--width);
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  font-size: var(--font-size);
+  max-width: 100px;
+}
