@@ -1,0 +1,16 @@
+
+.formLogin{
+	display: flex;
+	justify-content: center;
+	
+}
+form{
+	margin-top: 30px;
+	padding: 30px;
+	border: 1px solid blue;
+	border-radius: 1rem;
+	display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+}
+
